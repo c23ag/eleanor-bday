@@ -28,7 +28,7 @@
         left:750px;
         background-image: url(cupcake.png);
         animation-name:cupcake-shrink;
-        animation-duration:4s;
+        animation-duration:1.5s;
         animation-iteration-count: infinite;
     }
 
@@ -44,31 +44,105 @@
     }
 
     #bag {
+        top:100px;
+        left:50px;
         background-image: url(bag.png);
+        animation-name:bag-shrink;
+        animation-duration:1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes bag-shrink{
+        0%{width:200px;
+            height:200px;}
+
+            50%{width:100px;
+            height:100px;}
+
+            100%{width:200px;
+            height:200px;}
     }
 
     #coffee {
         background-image: url(coffee.png);
-        top:300px;
-        left:200px;
+        top:100px;
+        left:250px;
+        animation-name: coffee-tilt;
+        animation-duration:2s;
+        animation-iteration-count: infinite;
+        transition:1.5s ease-in-out;
+
     }
+
+     @keyframes coffee-tilt{
+        0%{transform:rotateZ(45deg);}
+
+            50%{transform:rotateZ(-45deg);}
+
+            100%{transform:rotateZ(45deg);}
+            
+}
+    
 
     #nailpolish {
         background-image: url(nailpolish.png);
         top:300px;
-        left:0px;
+        left:350px;
+        animation-name:nailpolish-shrink;
+        animation-duration:1.5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes nailpolish-shrink{
+        0%{width:200px;
+            height:200px;}
+
+            50%{width:100px;
+            height:100px;}
+
+            100%{width:200px;
+            height:200px;}
     }
 
     #broccoli {
         background-image: url(broccoli.png);
         top:300px;
-        left:300px;
+        left:50px;
+         animation-name: broccoli-tilt;
+        animation-duration:1.5s;
+        animation-iteration-count: infinite;
+        transition:1.5s ease-in-out;
+
+    }
+
+     @keyframes broccoli-tilt{
+        0%{transform:rotateZ(45deg);}
+
+            50%{transform:rotateZ(-45deg);}
+
+            100%{transform:rotateZ(45deg);}
     }
 
     #cute {
         background-image: url(cute.png);
+        width: 250px;
+        height: 250px;
         top:100px;
-        left:400px;
+        left:450px;
+         animation-name:cute-shrink;
+        animation-duration:1s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes cute-shrink{
+        0%{width:250px;
+            height:250px;}
+
+            50%{width:350px;
+            height:350px;}
+
+            100%{width:250px;
+            height:250px;}
     }
 
 
